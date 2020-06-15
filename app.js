@@ -4,8 +4,11 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+var favicon = require('serve-favicon')
+var path = require('path')
 
 const app = express();
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // Passport config
 require('./config/passport')(passport);
