@@ -1,3 +1,14 @@
-<h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= name %></p>
-<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<!-- <h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome, <%= name %></p>
+<a href="/users/logout" class="btn btn-primary">Logout</a> -->
+
+<div class="jumbotron mt-5">
+    <h1 class="display-3"><i class="fas fa-hand-sparkles"></i><br>Hello, <%= name %></h1>
+    <p class="lead">This is a simple login server build using Node.js, MongoDB, and custom CSS from <a href="http://bootswatch.com">bootswatch.com</a>.</p>
+    <hr class="my-4">
+    <p>Congratulations, you've successfully registered and passed some robust authentication!</p>
+    <p class="lead">
+        <a class="btn btn-outline-success" href="/articles" role="button">See articles</a>
+        <a class="btn btn-outline-primary" href="/users/logout" role="button">Log out</a>
+    </p>
+</div>

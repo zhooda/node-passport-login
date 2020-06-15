@@ -9,8 +9,17 @@ router.get('/', (req, res) => {
 
 // Dashboard page
 router.get('/dashboard', ensureAuthenticated, (req, res) => {
+    var fname = req.user.name.split(" ")[0];
     res.render('dashboard', {
-        name: req.user.name
+        name: fname
+    })
+})
+
+// Posts page
+router.get('/posts', ensureAuthenticated, (req, res) => {
+    var fname = req.user.name.split(" ")[0];
+    res.render('posts', {
+        name: fname
     })
 })
 
